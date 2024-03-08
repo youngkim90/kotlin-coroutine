@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/hello-async.iml" filepath="$PROJECT_DIR$/hello-async.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hello-async.main.iml" filepath="$PROJECT_DIR$/.idea/modules/hello-async.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hello-async.test.iml" filepath="$PROJECT_DIR$/.idea/modules/hello-async.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/kotlin-coroutine.iml" filepath="$PROJECT_DIR$/kotlin-coroutine.iml" />
     </modules>
   </component>
