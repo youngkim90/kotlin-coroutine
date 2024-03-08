@@ -1,11 +1,14 @@
 package org.example.sample
 
 import mu.KotlinLogging
+import kotlin.system.measureTimeMillis
 
 private val logger = KotlinLogging.logger {}
 fun main() {
-  subA()
-  subB()
+  measureTimeMillis {
+    subA()
+    subB()
+  }.let { logger.debug { ">> time: $it ms" } }
 }
 
 private fun subA() {
