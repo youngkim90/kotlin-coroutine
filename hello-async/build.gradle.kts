@@ -1,22 +1,23 @@
 plugins {
-    kotlin("jvm") version "1.9.22"
+  kotlin("jvm") version "1.9.22"
 }
 
 group = "org.example"
 version = "1.0-SNAPSHOT"
 
 repositories {
-    mavenCentral()
+  mavenCentral()
 }
 
 dependencies {
-    implementation("io.github.microutils:kotlin-logging:3.0.5")
-    testImplementation("org.jetbrains.kotlin:kotlin-test")
+  implementation("ch.qos.logback:logback-classic:1.4.11")
+  implementation("io.github.microutils:kotlin-logging:3.0.5")
+  testImplementation("org.jetbrains.kotlin:kotlin-test")
 }
 
 tasks.test {
-    useJUnitPlatform()
+  useJUnitPlatform()
 }
 kotlin {
-    jvmToolchain(17)
+  jvmToolchain(17)
 }
